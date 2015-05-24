@@ -9,7 +9,7 @@ The kind of work I like to do is at the intersection of technology and art. I'm 
 I like the quiet of early morning hours.
 
 ## colophon
-This website is set in <a href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a href="https://www.fontfont.com/">FontFont</a>. It was made with <a href="http://getkirby.com/" target=_blank>Kirby</a>, <a href="http://foundation.zurb.com/" target=_blank>Foundation</a> and <span class="sc">sass</span>, during a <strike>frigid</strike> sunny Montreal winter.
+This website is set in <a href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a href="https://www.fontfont.com/">FontFont</a>. It was made with <a href="http://getkirby.com/" target=_blank>Kirby</a>, <a href="http://foundation.zurb.com/" target=_blank>Foundation</a> and Sass, during a <strike>frigid</strike> sunny Montreal winter.
 
 ## reading list
 
