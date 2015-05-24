@@ -1,0 +1,29 @@
+Title: the invisible cities - part 3
+----
+Published: 05-23-2015
+----
+Text: 
+
+It’s been a while since I wanted to write a post about the performance part of working on the invisible cities. As I said in a previous post, I wanted to design for the fastest site I could right from the start.
+Despite being a fairly small site, it still consists for the most part of images and that can quickly get out of hand.
+
+_Basics
+
+I’ll skim over the basics so I can spend more time on the fine tuning. I chose not to serve my assets over a CDN because I simply don’t have the load or traffic to justify it, which is a good problem to have ! Just not one I have.
+First thing I did was to minify all CSS and JS files so as to save on extra requests to the server. (I’m currently working on some Grunt tasks to automate this tedious part) I then moved the script tags to the end of the document so as not to delay page parsing. I also spent some time playing around with rewrite rules for httpd which you can find [here](https://github.com/hemorej/invis/blob/master/.htaccess), those include gzip compression, expiry and caching directives to make the most of browser capabilities. Those were the first steps.
+
+(image: ./thumbs/before_after.jpg)
+
+_Tools
+I love Foundation, but one problem that comes with comprehensive frameworks is bloat, there is simply no way for a site like mine to use all of what they offer. I waited until the CSS edits were stable and I spent some time with [unCSS](https://github.com/giakki/uncss), a tool that runs a headless browser and crawls the application to find unused CSS code. It has its drawbacks, namely false positives from JS toggled classes (error states, dynamic/interactive states), but it did help me shrink down the file from 322kB to 9kB (2.7 after gzip) !
+
+Next up, subsetting fonts ! I knew about this cool [tool](http://subsetter.com/) from FontFont, but somehow I assumed I wouldn’t save that much. How wrong I was, I use two font files and between them I ended up shaving half the size or 35kB, which combined with the caching directives on httpd proved immensely helpful. I certainly didn’t need Greek symbols or Danish letters on my website !
+
+_Details
+By now my site was faster than what I had left behind, but I could still do better, especially with images. I was itching to implement lazy loading since Foundation didn’t support it out of the box. There are a lot of JS libraries for lazy loading but I needed something that I could bend and use with the Foundation Interchange data-attributes. I used [unveil.js](https://luis-almeida.github.io/unveil/) and hacked Interchange to delay loading of images outside the viewport. Let’s not forget to add a noscript tag for graceful degradation. Followed a period of experimenting with the compression ratio in the Kirby image library, server side. I found 80 to be good enough and not too compromising on quality. The Interchange component took care of serving appropriately sized images depending on viewport size, that means mobile devices never have to download the large version meant for your 27” monitor.
+
+(image: ./thumbs/scrolling.gif caption: lazy loading images)
+
+My initial implementation however relied on data-uri to show a placeholder image as the real picture loaded. That turned out to be a bad idea, as they’re not cacheable, they’re quite heavy (2.5k each time) and add quite a bit of HTTP overhead. After looking around I decided to swap them for an inline SVG which weighs 650B, is downloaded only once and is cached by the browser.
+
+(image: ./thumbs/end.jpg caption: loads under a second)

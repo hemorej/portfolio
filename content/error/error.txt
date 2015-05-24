@@ -1,0 +1,3 @@
+Title: Error
+----
+Text: Congratulations, you broke my website, I hope you're happy. Just kidding ! If you followed a link you can drop me a line to let me know it's broken, or use the menu to keep browsing.

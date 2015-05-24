@@ -1,0 +1,13 @@
+Title: jerome arfouche
+----
+Author: Jerome Arfouche
+----
+Description: Jerome Arfouche's portfolio
+----
+Keywords: graphic design, development, web, jerome arfouche
+----
+Copyright: design © 2015 jerome arfouche, all rights reserved.
+----
+Intro: Hello! I'm Jerome and I'm a developer and graphic designer from Montreal. I build <a href="https://github.com/hemorej">websites</a> and <a href="design">design</a> things. Away from the computer I'm an avid <a href="reading-list">reader</a> and <a href="http://the-invisible-cities.com">photographer</a>. Here's a <a href="./resume.pdf" target=_blank>resume</a> if you're into that kind of thing and some more <a href="about">info</a> about what I do.<br><br>
+I’m currently working on a writing app based on Node.js and a book design. 
+<a href="mailto:hello@jerome-arfouche.com">Say hi</a>, don't be shy.

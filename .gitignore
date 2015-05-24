@@ -1,0 +1,12 @@
+node_modules/
+*.pdf
+*.jpg
+*.png
+*.svg
+*.ico
+*.woff
+*.eot
+thumbs/
+npm-debug.log
+illustration/
+bower_components/

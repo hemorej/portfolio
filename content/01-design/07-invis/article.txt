@@ -1,0 +1,12 @@
+Text: My photography website and main laboratory when it comes to experimenting with web novelties or new design ideas.
+
+*Client:* Personal project
+*Brief:* Redesign the website to strengthen the design. The visual language is currently incoherent, the layout's responsiveness is poor and the solution I had found for the images is dated and not very efficient or performant.
+*Year:* 2015
+
+The code for the project is on [github](https://github.com/hemorej/invis), I wrote in more detail about the [process](../blog/part-1) and here’s the [website](http://the-invisible-cities.com)
+
+----
+Title: the invisible cities
+----
+New: *new
