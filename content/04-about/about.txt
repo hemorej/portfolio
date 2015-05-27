@@ -24,5 +24,6 @@ Because I'm a <a href="reading-list">book</a> nerd, not exhaustive.
     <li><a href="http://codepen.io/jerome_a_/" target=_blank>codepen</a> — quick web experiments</li>
     <li><a href="http://ello.co/hemorej/" target=_blank>ello</a> — still figuring out what to do with it</li>
     <li><a href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
+    <li><a href="http://jeromearfouche.bigcartel.com" target=_blank>shop</a> — my photography print shop</li>
     <li><a href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
 </ul>
