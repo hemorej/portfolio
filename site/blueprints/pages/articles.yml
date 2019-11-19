@@ -1,0 +1,16 @@
+title: Articles
+
+columns:
+  - width: 1/2
+    sections:
+      drafts:
+        type: pages
+        headline: Drafts
+        status: draft
+
+  - width: 1/2
+    sections:
+      listed:
+        type: pages
+        headline: Published
+        status: listed
