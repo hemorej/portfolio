@@ -23,15 +23,15 @@
 
 		<p class="medium-space-top"></p>
 		<span class="right">				
-			<?php if($page->hasNextVisible()): ?>
+			<?php if($page->hasNextListed()): ?>
 				<a href="<?php echo $page->next()->url() ?>">&laquo; newer </a>
 			<?php endif ?>
 
-			<?php if($page->hasNextVisible() && $page->hasPrevVisible()): ?>
+			<?php if($page->hasNextListed() && $page->hasPrevListed()): ?>
 				| 
 			<?php endif ?>
 
-			<?php if($page->hasPrevVisible()): ?>
+			<?php if($page->hasPrevListed()): ?>
 				<a href="<?php echo $page->prev()->url() ?>">older &raquo;</a>
 			<?php endif ?>
 		</span>
@@ -39,7 +39,7 @@
 		</div>
 		<div class="medium-4 small-12 columns">
 			<ul class="no-bullet side">
-				<?php foreach($pages->visible() AS $p): ?>
+				<?php foreach($pages->listed() AS $p): ?>
 				<li><a href="<?php echo $p->url() ?>"><?php echo '/'.$p->title()->lower() ?></a></li>
 				<?php endforeach ?>
 				<li><a href="../">/home</a></li>
