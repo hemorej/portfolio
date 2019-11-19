@@ -8,5 +8,3 @@ The code for the project is on [github](https://github.com/hemorej/invis), I wro
 
 ----
 Title: the invisible cities
-----
-New: *new

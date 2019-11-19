@@ -1,5 +1,9 @@
 <?php
 
 return [
-    'timezone'  => 'America/Montreal'
+    'timezone'  => 'America/Montreal',
+	'thumbs' => [
+		'quality'   => 90,
+	],
+     'debug'  => true
 ];

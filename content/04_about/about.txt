@@ -1,8 +1,8 @@
 Title: About
-----
-Text: 
 
-I’m a friendly bike-riding, coffee-loving person from Montreal. I develop for the web, anywhere on the stack from designing REST APIs to optimizing the front end. I’m also a graphic designer with an interest in typography, book and web design. This website is a slightly messy showcase of everything I do.
+----
+
+Text: I’m a friendly bike-riding, coffee-loving person from Montreal. I develop for the web, anywhere on the stack from designing REST APIs to optimizing the front end. I’m also a graphic designer with an interest in typography, book and web design. This website is a slightly messy showcase of everything I do.
 
 The kind of work I like to do is at the intersection of technology and art. I'm a curious person by nature and so I'm driven by a desire to figure out how things work and to create things.
 
@@ -18,12 +18,10 @@ Because I'm a <a href="reading-list">book</a> nerd, not exhaustive.
 ## contact <a name="contact"></a>
 
 <ul class="no-bullet medium">
-    <li><a href="http://twitter.com/jerome_a_" target=_blank>twitter</a> — where I share random junk</li>
     <li><a href="http://instagram.com/jerome_a_" target=_blank>instagram</a> — no selfies, I promise</li>
-    <li><a href="http://flickr.com/photos/jerome88" target=_blank>flickr</a> — not sure what I'm still doing there</li>
+    <li><a href="https://ello.co/jerome_a_" target=_blank>ello</a> — not sure where this is going</li>
     <li><a href="http://codepen.io/jerome_a_/" target=_blank>codepen</a> — quick web experiments</li>
-    <li><a href="http://ello.co/hemorej/" target=_blank>ello</a> — still figuring out what to do with it</li>
     <li><a href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
-    <li><a href="http://jeromearfouche.bigcartel.com" target=_blank>shop</a> — my photography print shop</li>
+    <li><a href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
     <li><a href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
 </ul>

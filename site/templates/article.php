@@ -17,9 +17,9 @@
 		<h3><a href="<?php echo $page->url() ?>"><?php echo $headline ?></a></h3>
 		<?php 
 		echo kirbytext($page->text()) ;
-		foreach($page->images() as $image): 
-			snippet('interchange', array('image' => $image, 'alt' => $image->alt(), 'caption' => $image->caption()));
-		endforeach ?>
+		foreach($page->images() as $image): ?>
+			<img srcset="<?= $image->srcset([300, 800, 1024]) ?>">
+		<?php endforeach ?>
 
 		<p class="medium-space-top"></p>
 		<span class="right">				
