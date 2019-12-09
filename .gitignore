@@ -6,6 +6,7 @@ node_modules/
 *.ico
 *.woff
 *.eot
+*.gif
 thumbs/
 npm-debug.log
 illustration/

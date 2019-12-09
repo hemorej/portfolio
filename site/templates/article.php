@@ -16,10 +16,13 @@
 	<div class="small-12 medium-8 columns text-justify">	
 		<h3><a href="<?php echo $page->url() ?>"><?php echo $headline ?></a></h3>
 		<?php 
-		echo kirbytext($page->text()) ;
-		foreach($page->images() as $image): ?>
-			<img srcset="<?= $image->srcset([300, 800, 1024]) ?>">
-		<?php endforeach ?>
+		echo kirbytext($page->text());
+
+		if($page->parent()->title() != 'blog'):
+			foreach($page->images() as $image): ?>
+				<img srcset="<?= $image->srcset([300, 800, 1024]) ?>">
+			<?php endforeach ?>
+		<?php endif ?>
 
 		<p class="medium-space-top"></p>
 		<span class="right">				
