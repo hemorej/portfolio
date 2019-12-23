@@ -8,6 +8,7 @@ columns:
         templates:
           - about
           - articles
+          - reading
 
   left:
     width: 2/3
