@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/apple-touch-icon-114x114.png') ?>" />
 
   <link rel="alternate" type="application/rss+xml" href="<?php echo url('feed') ?>" title="Feed | <?php echo html($site->title()) ?>" />
-
+  <script async defer data-website-id="46ee0ed5-984d-45dd-8687-1e84b4e8bec3" src="https://umami.the-invisible-cities.com/umami.js"></script>
 </head>
 
 <body <?php if (isset($error)) echo 'class="error"' ?>>
