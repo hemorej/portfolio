@@ -18,10 +18,9 @@ Because I'm a <a href="reading-list">book</a> nerd, not exhaustive.
 ## contact <a name="contact"></a>
 
 <ul class="no-bullet medium">
-    <li><a href="http://instagram.com/jerome_a_" target=_blank>instagram</a> — no selfies, I promise</li>
-    <li><a href="https://ello.co/jerome_a_" target=_blank>ello</a> — not sure where this is going</li>
-    <li><a href="http://codepen.io/jerome_a_/" target=_blank>codepen</a> — quick web experiments</li>
-    <li><a href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
-    <li><a href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
-    <li><a href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
+    <li><a class="umami--click-instagram" href="http://instagram.com/jerome_a_" target=_blank>instagram</a> — no selfies, I promise</li>
+    <li><a class="umami--click-codepen" href="http://codepen.io/jerome_a_/" target=_blank>codepen</a> — quick web experiments</li>
+    <li><a class="umami--click-github" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
+    <li><a class="umami--click-invis" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
+    <li><a class="umami--click-email" href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
 </ul>
