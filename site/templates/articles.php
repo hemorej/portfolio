@@ -1,47 +1,42 @@
 <?php snippet('header') ?>
 
 <?php	
-	  $articles = $page->children()
-	                    ->listed()
-	                    ->flip()
-	                    ->paginate(10);
+    $articles = $page->children()->listed()->flip()->paginate(10);
 ?>
 
-    <div class="row medium-space-top">
-      <div class="medium-8 columns">
-          <article class="intro medium-text-right">
-			<?php foreach($articles as $article): ?>
-				<h3><small><?php echo html($article->published()->lower()) ?></small></h3>
-				<?php if($page->links() == 'true'): ?>
-					<h3><a class="high-contrast" href="<?php echo $article->link() ?>"><?php echo html($article->title()->lower()) ?></a></h3>
+<div class="cf mt6">
+    <div class="fl w-60-ns w-100">
+        <article class="tr-ns mid-gray">
+		  <?php foreach($articles as $article): ?>
+            <div class="i"><?= html($article->published()->lower()) ?></div>
+            <div class="mb3">
+                <?php if($page->links() == 'true'): ?>
+				    <a class="link meta-cd mid-gray hover-gold hover-strike f2" href="<?= $article->link() ?>"><?= html($article->title()->lower()) ?></a>
 				<?php else: ?>
-					<h3>
-						<span><small class="show-for-medium-up"><?php echo $article->new() ?> </small></span>
-						<a class="high-contrast" href="<?php echo $article->url() ?>"><?php echo html($article->title()->lower()) ?></a>
-						<span><small class="show-for-small-only"><?php echo $article->new() ?></small></span>
-					</h3>
+					<div class="i dn db-ns"><?= $article->new() ?></div>
+					<a class="link meta-cd mid-gray hover-gold hover-strike f2" href="<?= $article->url() ?>"><?= html($article->title()->lower()) ?></a>
 				<?php endif ?>
+            </div>
 			<?php endforeach ?>
-
-          </article>
+        </article>
     </div>
 
-    <div class="medium-4 small-12 columns">
-      <ul class="no-bullet side">
-  	    <?php foreach($pages->listed() AS $p): ?>
-	    <li><a href="<?php echo $p->url() ?>"><?php echo '/'.$p->title()->lower() ?></a></li>
-	    <?php endforeach ?>
-	    <li><a href="./">/home</a></li>
-      </ul>
+    <div class="fl w-40-ns w-100">
+        <ul class="list f4 pl0 pl3-ns mt5-ns mt3">
+            <?php foreach($pages->listed() as $p): ?>
+	           <li class="pb2"><a class="link silver hover-gold" href="<?= $p->url() ?>"><?= '/'.$p->title()->lower() ?></a></li>
+            <?php endforeach ?>
+                <li class="pb2"><a class="link silver hover-gold" href="./">/home</a></li>
+        </ul>
     </div>
 </div>
 
-	<?php if($articles->pagination()->hasPages()): ?>
-	<div class="row">		
-		<div class="small-12 medium-8 columns">
-			<span class="right">
+<?php if($articles->pagination()->hasPages()): ?>
+	<div class="cf">
+		<div class="fl w-60-ns w-100">
+			<div class="tr">
 			<?php if($articles->pagination()->hasPrevPage()): ?>
-				<a href="<?= $articles->pagination()->prevPageURL() ?>">&laquo; newer </a>
+				<a class="link silver hover-gold" href="<?= $articles->pagination()->prevPageURL() ?>">&laquo; newer </a>
 			<?php endif ?>
 
 			<?php if($articles->pagination()->hasNextPage() && $articles->pagination()->hasPrevPage()): ?>
@@ -49,11 +44,11 @@
 			<?php endif ?>
 			
 			<?php if($articles->pagination()->hasNextPage()): ?>
-				<a href="<?= $articles->pagination()->nextPageURL() ?>">older  &raquo;</a>
-			<?php endif ?>	
-			</span>
+				<a class="link silver hover-gold" href="<?= $articles->pagination()->nextPageURL() ?>">older  &raquo;</a>
+			<?php endif ?>
+			</div>
 		</div>
 	</div>
-	<?php endif ?>
+<?php endif ?>
 
 <?php snippet('footer') ?>

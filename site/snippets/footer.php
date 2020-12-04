@@ -1,17 +1,10 @@
 <?php if (!isset($noCopyright)): ?>
-    <div class="row large-space-top">
-      <footer class="small-12 medium-8 medium-only-text-right columns low-contrast">
-        <?php echo kirbytext($site->copyright()) ?>
+    <div class="mt6 cf">
+      <footer class="fl w-100 w-60-ns tr-ns dim moon-gray f6">
+        <?= kirbytext($site->copyright()) ?>
       </footer>
     </div>
-<?php endif; ?>
+<?php endif ?>
 
-<body <?php if (isset($error)) echo 'class="error"' ?>>
-
-<?php echo js('assets/js/min.js') ?>
-<script>
-	$(document).foundation();
-</script>
 </body>
-
 </html>

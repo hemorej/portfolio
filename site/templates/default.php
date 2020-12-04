@@ -1,31 +1,26 @@
 <?php snippet('header') ?>
 
-<div class="row medium-space-top">
-    <?php 
+<?php 
     if( $page->title() != $page->uid()){
         $headline = "_".$page->title()->lower();
-    }
-    else if("" !== $page->published()->toString()){
+    }else if("" !== $page->published()->toString()){
         $headline = date('F d, Y', strtotime($page->published()->toString()));
     }
-    ?>
-
-</div>
-<div class="row">
-
-    <div class="small-12 medium-8 medium-text-right columns">    
-            <h3><a href="<?php echo $page->url() ?>"><?php echo $headline ?></a></h3>
-            <?php echo kirbytext($page->text()) ; ?>
-
-        </div>
-          <div class="medium-4 small-12 columns">
-          <ul class="no-bullet side">
-            <?php foreach($pages->listed() AS $p): ?>
-            <li><a href="<?php echo $p->url() ?>"><?php echo '/'.$p->title()->lower() ?></a></li>
+?>
+<div class="cf mt6">
+    <div class="fl w-100 w-60-ns tr-ns">
+        <a class="f3 meta-cd link silver hover-gold" href="<?= $page->url() ?>"><?= $headline ?></a>
+        <?= kirbytext($page->text()); ?>
+    </div>
+    
+    <div class="fl w-100 w-40-ns">
+        <ul class="list f4 pl0 pl3-ns mt5-ns mt3">
+            <?php foreach($pages->listed() as $p): ?>
+                <li class="pb2"><a class="link silver hover-gold" href="<?= $p->url() ?>"><?= '/'.$p->title()->lower() ?></a></li>
             <?php endforeach ?>
-            <li><a href="./">/home</a></li>
-          </ul>
-        </div>
-    </div>  
+            <li class="pb2"><a class="link silver hover-gold" href="./">/home</a></li>
+        </ul>
+    </div>
+</div>  
 
 <?php snippet('footer') ?>
