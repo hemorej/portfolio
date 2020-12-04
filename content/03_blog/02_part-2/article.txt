@@ -3,39 +3,44 @@ Title: the invisible cities - part 2
 Published: 12-01-2015
 ----
 Text: 
-In [part one](./part-1) I talked about why I wanted this redesign and what were the objectives at the end of it. I knew that most of the work was going to go into migrating platforms (I had two five year old blogs with thousands of pictures) and implementing a proper responsive solution for the images.
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+In <a class="link silver hover-gold hover-strike" href="./part-1">part one</a> I talked about why I wanted this redesign and what were the objectives at the end of it. I knew that most of the work was going to go into migrating platforms (I had two five year old blogs with thousands of pictures) and implementing a proper responsive solution for the images.
+</div>
 
-## _Migration
-
-Let's start with the CMS migration. The Wordpress structure puts everything in *wp-content/uploads/year/month* and creates files of different sizes there. The Kirby structure is *content/section/subsection*, the images could be there or elsewhere but obviously keeping the relevant images in their section is much more maintainable.
-Wordpress offered an export function which dumped the database as an XML file describing the content and the structure. I then downloaded the entire /uploads directory from the server and made a (link: https://github.com/hemorej/invis/blob/master/site/export.php text: script) to translate the Wordpress structure into a Kirby one and move the corresponding files there.
+<div class="black-90 f3 meta-cd lh-copy mv2">_migration</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+Let's start with the CMS migration. The Wordpress structure puts everything in <span class="i">wp-content/uploads/year/month</span> and creates files of different sizes there. The Kirby structure is <span class="i">content/section/subsection</span>, the images could be there or elsewhere but obviously keeping the relevant images in their section is much more maintainable.
+Wordpress offered an export function which dumped the database as an XML file describing the content and the structure. I then downloaded the entire /uploads directory from the server and made a <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/invis/blob/master/site/export.php">script</a> to translate the Wordpress structure into a Kirby one and move the corresponding files there.
 
 Database be gone ! Around this time Kirby 2 came out with a much better panel to create pages and upload files.
 
-For the front end I decided to go with (link: http://foundation.zurb.com/docs/ text: Foundation) because they offered most of what I needed (grid, typography, interchange for responsive images) and I could choose which elements I needed to keep the CSS file reasonable.
+For the front end I decided to go with <a class="link silver hover-gold hover-strike" href="http://foundation.zurb.com/docs/">Foundation</a> because they offered most of what I needed (grid, typography, interchange for responsive images) and I could choose which elements I needed to keep the CSS file reasonable.
 
-Improving performance first had to go through the images, those are by far the heaviest elements on the site. This meant hacking the Kirby thumbs.php library to change the quality of resized files and then hacking Foundation's interchange to make it lazy load images on top of its regular behaviour. I’m pretty happy about this solution and I’ll probably dedicate a post for it <strike>in the future</strike> [here](./part-3).  
+Improving performance first had to go through the images, those are by far the heaviest elements on the site. This meant hacking the Kirby thumbs.php library to change the quality of resized files and then hacking Foundation's interchange to make it lazy load images on top of its regular behaviour. I’m pretty happy about this solution and I’ll probably dedicate a post for it <strike>in the future</strike> <a class="link silver hover-gold hover-strike" href="./part-3">here</a>
 
-Then I used (link: https://github.com/giakki/uncss text: uncss) to find which CSS rules from Foundation were unused, and I concatenated the files to minimize HTTP calls. Uncss does a great job of finding which rules you don’t need but I had put back some styles that Javascript was manipulating dynamically. Then I did the same for the Javascript files. 
+Then I used <a class="link silver hover-gold hover-strike" href="https://github.com/giakki/uncss">uncss</a> to find which CSS rules from Foundation were unused, and I concatenated the files to minimize HTTP calls. Uncss does a great job of finding which rules you don’t need but I had put back some styles that Javascript was manipulating dynamically. Then I did the same for the Javascript files. 
 And last, I implemented some .htaccess rules, namely cache expiry rules and gzip compression. 
+</div>
 
-## _Design
-
+<div class="black-90 f3 meta-cd lh-copy mv2">_design</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
 Let's talk about the design. 
 
-There wasn't a lot of reorganization in the content. My most visited pages were still going to be there and the URL structure provided by Kirby was unchanged. For the blog I decided to go with a simple date format that resembled Wordpress, it's short, readable, unique and makes sense as it relates to the time it was posted. So as far as information architecture there wasn't much change, except the menu . 
+There wasn't a lot of reorganization in the content. My most visited pages were still going to be there and the URL structure provided by Kirby was unchanged. For the blog I decided to go with a simple date format that resembled Wordpress, it's short, readable, unique and makes sense as it relates to the time it was posted. So as far as information architecture there wasn't much change, except the menu. 
 
 In terms of hierarchy it's pretty simple, I don't have a lot of text content so I had titles, subtitles and text. I love big type so I kept the large type for the sections. I used a scale of fifth for the typography to maintain contrast between elements at those sizes. 
-I went for a single family sans serif on the whole site, sans serifs look modern and don't distract from the images, I'm a fan of the work done at (link: https://www.fontfont.com/ text: FontFont), their typefaces perfectly suit what I'm looking for and have a certain unique character. I chose a condensed font for the titles and subtitles, they look elegant, and work well on smaller screen sizes. 
+I went for a single family sans serif on the whole site, sans serifs look modern and don't distract from the images, I'm a fan of the work done at <a class="link silver hover-gold hover-strike" href="https://www.fontfont.com/">FontFont</a>, their typefaces perfectly suit what I'm looking for and have a certain unique character. I chose a condensed font for the titles and subtitles, they look elegant, and work well on smaller screen sizes. 
 
 I wanted more white space around the images, I'm not really a fan of huge images found on the web today. Pages often become so heavy when presented as a set and since my photographs are usually of soft and subtle expression it didn't make much design sense to post them so big in your face. Instead I wanted the experience to feel like going to a photography gallery, where prints are rarely that big. There wasn't much text content on my website, so the white space would further focus the attention on the images. I wanted the design to feel modern and break the traditional layout found on most photography websites (title above, list menu on left, carousel for images) but wasn't aiming for anything too trendy.
 
 I thought about changing the colour to something other than red because red with black and white is a little overused. I need something that highlights the black and white images and isn't too overpowering, something not too suggestive of calm and stability but rather of the tension, contrast and pace of the actual pictures. I thought of green, less aggressive than the original red, less dominant and in a brighter form, takes some energy from yellow. Darker red takes the elegance and power of black and reaffirms the deep blacks found in my pictures, and I liked the reference to my analog photographic process and the darkroom light. In the end I kept the red but lightened it and used it only as an accent.
+</div>
 
-## _Putting it together
-
+<div class="black-90 f3 meta-cd lh-copy mv2">_Putting it together</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
 My deployment process isn't very sophisticated now that I don’t have a database anymore, I usually use git to update the code and text content on a staging server (Kirby does a great job of separating development and production config files) then rsync the remaining changes from local to remote (usually just the images). Testing and surprises and bug fixes on the staging server for a while then I move them to the production server. From my stats I know between 11pm and 1am on weekdays is a good time to do that, it's when I have the least visitors.
 
 There's a lot I haven't talked about like the many (many) refactors to the thumbs library, the lazy loading testing, staging server issues, integrating twitter cards dynamically, starting development with pure SCSS then scrapping everything and going with Foundation and all the time I wasted because of a silly MAMP problem but it did take me around a month and a half of nights and weekends to put it together. What takes the most time is testing, testing small performance tweaks, testing the cache, testing the migration script, device testing, browser testing etc
 
 Right now I’m pretty satisfied with the result even though there still needs work to be done, I never intended to do everything from the first go, the idea is to keep iterating.
+</div>

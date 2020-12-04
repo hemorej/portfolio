@@ -10,4 +10,8 @@ An online darkroom timer for film development
 *Brief:* Design a small, fast one page application using Vue.js to setup timers for film development. Page should be able to save times for future reuse.
 *Year:* 2019
 
-The code for the project is on [github](https://github.com/hemorej/darkroom-timer) and here’s the [website](https://jerome-arfouche.com/darkroom)
+The code for the project is on <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/darkroom-timer">github</a> and here’s the <a class="link silver hover-gold hover-strike" href="https://jerome-arfouche.com/darkroom">website</a>
+
+----
+
+New: new

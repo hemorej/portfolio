@@ -20,6 +20,6 @@ Copyright: design © 2015–(date: Year) jerome arfouche, all rights reserved.
 
 Intro:
 
-Hello! I'm Jerome and I'm a web developer from Montreal. I <a href="design">design</a> and build <a href="https://github.com/hemorej">websites</a>. Away from the computer I'm an avid <a href="reading-list">reader</a> and <a href="http://the-invisible-cities.com">photographer</a>. Here's a <a href="./resume.pdf" target=_blank>resume</a> if you're into that kind of thing and some more <a href="about">info</a> about what I do.<br><br>
+Hello! I'm Jerome and I'm a web developer from Montreal. I <a class="link silver hover-gold" href="design">design</a> and build <a class="link silver hover-gold" href="https://github.com/hemorej">websites</a>. Away from the computer I'm an avid <a class="link silver hover-gold" href="reading-list">reader</a> and <a class="link silver hover-gold" href="http://the-invisible-cities.com">photographer</a>. Here's a <a class="link silver hover-gold" href="./resume.pdf" target=_blank>resume</a> if you're into that kind of thing and some more <a class="link silver hover-gold" href="about">info</a> about what I do.<br><br>
 I’m currently working with KirbyCMS, Laravel and Vue.js. Oh and rebuilding my darkroom. 
-<a href="mailto:hello@jerome-arfouche.com">Say hi</a>, don't be shy.
+<a class="link silver hover-gold" href="mailto:hello@jerome-arfouche.com">Say hi</a>, don't be shy.

@@ -3,13 +3,15 @@ Title: the invisible cities - part 1
 Published: 10-01-2015
 ----
 Text:
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
 Welcome to the first part of the process pages for The Invisible Cities design !
 In this part I'll discuss a bit of the reasoning, the research and initial work on the website.
 
-The last major upgrade to my site was a couple of years ago. Changes included bringing in (link: http://getkirby.com text: Kirby) CMS for the first time, typography and some colour changes, and the first step in trying to make the website more responsive. Since then a lot has changed, and the list of "fix this one day" had become too long.
+The last major upgrade to my site was a couple of years ago. Changes included bringing in <a class="link silver hover-gold hover-strike" href="http://getkirby.com">Kirby</a> CMS for the first time, typography and some colour changes, and the first step in trying to make the website more responsive. Since then a lot has changed, and the list of "fix this one day" had become too long.
 
-## _Background
-
+</div>
+<div class="black-90 f3 meta-cd lh-copy mv2">_background</div>
+<div class="lh-copy f4 mid-gray ff-meta-serif">
 Functionally, the site was a monster. There was a Kirby install for the website alongside a dual Wordpress install for the blogs. There was quite a bit of work maintaining the themes between Kirby and the databases. I'd used Kirby on a few other projects and was itching to just move everything over to a single CMS that simplified maintenance, backups, file structure and development. It was high time I wrote a proper responsive solution for the website because it barely qualified as adaptive. The photographs were small but still served the full size for all platforms and my fix for vertical images was quite awful. I was also tired of resizing the images by hand before upload, let the machines do the tedious work !
 
 From a design perspective, the grid was a mess. The layouts weren't the same between the blogs and the rest of the site, the menu wasn't aligned to...in fact few elements were aligned with each other. There were also some poor typographic choices, like all caps on certain pages and uneven spacing. There was no type contrast and no content hierarchy, the large body serif type didn't marry well with the headline type. 
@@ -17,9 +19,9 @@ From a design perspective, the grid was a mess. The layouts weren't the same bet
 (image: old_web_2.jpg caption: the old layout)
 (image: old_web.jpg caption: the old about page)
 <br>
-
-## _Goals
-
+</div>
+<div class="black-90 f3 meta-cd lh-copy mv2">_goals</div>
+<div class="lh-copy f4 mid-gray ff-meta-serif">
 In terms of design it wasn't so much a complete makeover but perhaps a better and stronger expression of the design I had in mind initially, but couldn't execute. It also brings a lot of technical improvements in the background that might not be visible but that would make life much easier to me, the maintainer. 
 
 At this point I started sketching and listed some goals. There was one client here, myself, but I used the site in different ways.
@@ -36,3 +38,4 @@ At this point I started sketching and listed some goals. There was one client he
 
 
 With that stated, it became clear the biggest challenges were going to be the responsive images and migrating two 5 year old blogs with hundreds of posts and thousands of images to a new CMS without breaking anything and with minimal downtime.
+</div>

@@ -4,7 +4,7 @@ Text: My photography website and main laboratory when it comes to experimenting 
 *Brief:* Redesign the website to strengthen the design. The visual language is currently incoherent, the layout's responsiveness is poor and the solution I had found for the images is dated and not very efficient or performant.
 *Year:* 2015
 
-The code for the project is on [github](https://github.com/hemorej/invis), I wrote in more detail about the [process](../blog/part-1) and here’s the [website](http://the-invisible-cities.com)
+The code for the project is on <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/invis">github</a>, I wrote in more detail about the <a class="link silver hover-gold hover-strike" href="../blog/part-1">process</a> and here’s the <a class="link silver hover-gold hover-strike" href="http://the-invisible-cities.com">website</a>
 
 ----
 Title: the invisible cities
