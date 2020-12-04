@@ -9,7 +9,7 @@
       <?php foreach($pages->listed() as $p): ?>
         <li class="pb2"><a class="link gold hover-silver bg-black-60 pa2" href="<?= $p->url() ?>"><?= '/'.$p->title()->lower() ?></a></li>
       <?php endforeach ?>
-      <li class="pb2"><a class="link gold hover-silver bg-black-60 pa2" href="./">/home</a></li>
+      <li class="pb2"><a class="link gold hover-silver bg-black-60 pa2" href="/">/home</a></li>
     </ul>
   </nav>
 </div>
