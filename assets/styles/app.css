@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'ff-meta-serif';
-  src: url('../font/MetaWeb-Normal.eot'),
-       url('../font/MetaWeb-Normal.eot?#iefix') format('embedded-opentype'),
-       url('../font/MetaWeb-Normal.woff') format('woff');
+  font-family: ff-meta-serif;
+  src: url('../font/MetaSerifWeb-Book.eot'),
+       url('../font/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
+       url('../font/MetaSerifWeb-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
