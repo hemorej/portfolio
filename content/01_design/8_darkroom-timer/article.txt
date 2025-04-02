@@ -11,7 +11,3 @@ An online darkroom timer for film development
 *Year:* 2019
 
 The code for the project is on <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/darkroom-timer">github</a> and here’s the <a class="link silver hover-gold hover-strike" href="https://jerome-arfouche.com/darkroom">website</a>
-
-----
-
-New: new

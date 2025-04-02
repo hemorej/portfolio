@@ -2,7 +2,8 @@ Title: About
 
 ----
 
-Text: 
+Text:
+
 <div class="mt4 lh-copy f3 mid-gray ff-meta-serif">
 I’m a friendly bike-riding, coffee-loving person from Montreal. I develop for the web, anywhere on the stack from designing <span class="small-caps">rest api</span>s to optimizing the front end. I’m also a graphic designer with an interest in typography, book and web design. This website is a slightly messy showcase of everything I do.
 
@@ -13,14 +14,21 @@ I like the quiet of early morning hours.
 
 <div class="black-90 f3 meta-cd lh-copy mv2">colophon</div>
 <div class="lh-copy f4 mid-gray ff-meta-serif">
-This website is set in <a class="link silver hover-gold hover-strike" href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a class="link silver hover-gold hover-strike" href="https://www.fontfont.com/">FontFont</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby</a>, <a class="link silver hover-gold hover-strike" href="http://foundation.zurb.com/" target=_blank>Foundation</a> and Sass, during a <strike>frigid</strike> sunny Montreal winter.
+This website is set in <a class="link silver hover-gold hover-strike" href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a class="link silver hover-gold hover-strike" href="https://www.fontfont.com/">FontFont</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby</a> and Sass, during a <strike>frigid</strike> sunny Montreal winter.
 </div>
 
-<div class="black-90 f3 meta-cd lh-copy mv2">links</div>
+<div class="black-90 f3 meta-cd lh-copy mv2">reading list</div>
+<div class="lh-copy f4 mid-gray ff-meta-serif">
+Because I'm a <a class="link silver hover-gold hover-strike" href="reading-list">book</a> nerd, not exhaustive.
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">contact</div>
 <ul class="list lh-copy mid-gray f4">
-    <li><a class="link silver hover-gold hover-strike" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
-    <li><a class="link silver hover-gold hover-strike" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
-    <li><a class="link silver hover-gold hover-strike" href="reading-list">reading list</a> — because i'm a nerd</li>
-    <li><a class="link silver hover-gold hover-strike" href="https://www.strava.com/athletes/1828846">biking</a> — my other obsession</li>
-    <li><a class="link silver hover-gold hover-strike" href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
+    <li><a class="link silver hover-gold hover-strike umami--click-github" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
+    <li><a class="link silver hover-gold hover-strike umami--click-invis" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
+    <li><a class="link silver hover-gold hover-strike umami--click-email" href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
 </ul>
+
+----
+
+Uuid: 0Ee4Vrl910uh06ME
