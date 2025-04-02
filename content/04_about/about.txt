@@ -13,7 +13,7 @@ I like the quiet of early morning hours.
 
 <div class="black-90 f3 meta-cd lh-copy mv2">colophon</div>
 <div class="lh-copy f4 mid-gray ff-meta-serif">
-This website is set in <a class="link silver hover-gold hover-strike" href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a class="link silver hover-gold hover-strike" href="https://www.fontfont.com/">FontFont</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby</a>, <a class="link silver hover-gold hover-strike" href="http://foundation.zurb.com/" target=_blank>Foundation</a> and Sass, during a <strike>frigid</strike> sunny Montreal winter.
+This website is set in <a class="link silver hover-gold hover-strike" href="http://www.fontshop.com/fonts/family/ff_meta/" target=_blank>FF Meta</a> by the wonderful folks at <a class="link silver hover-gold hover-strike" href="https://www.fontfont.com/">FontFont</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby</a> and Sass, during a <strike>frigid</strike> sunny Montreal winter.
 </div>
 
 <div class="black-90 f3 meta-cd lh-copy mv2">links</div>
