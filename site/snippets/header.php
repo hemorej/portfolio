@@ -14,8 +14,6 @@
   <link rel="shortcut icon" type="image/x-icon"  href="<?= url('assets/images/favicon.ico') ?>">
   <link rel="apple-touch-icon" sizes="72x72" href="<?= url('assets/images/apple-touch-icon-72x72.png') ?>" />
   <link rel="apple-touch-icon" sizes="114x114" href="<?= url('assets/images/apple-touch-icon-114x114.png') ?>" />
-
-  <script async defer data-website-id="a31943ad-9cd7-43c7-8d39-17a1e61ecc71" src="https://umami.the-invisible-cities.com/umami.js"></script>
 </head>
 
 <body class="pa3 mw8 center ff-meta-serif <?php if (isset($error)) echo 'error' ?>">
