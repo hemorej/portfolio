@@ -5,5 +5,5 @@ return [
 	'thumbs' => [
 		'quality'   => 90,
 	],
-     'debug'  => true
+     'debug'  => false
 ];
