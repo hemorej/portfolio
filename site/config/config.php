@@ -5,5 +5,12 @@ return [
 	'thumbs' => [
 		'quality'   => 90,
 	],
-     'debug'  => false
+    'debug'  => false,
+    'auth' => [
+        'trials' => 5,
+        'challenges' => ['totp', 'email'],
+        'methods' => [
+            'password' => ['2fa' => true]
+        ]
+    ],
 ];
