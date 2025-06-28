@@ -1,0 +1,17 @@
+Title: dropbox to markdown hosting
+
+----
+
+Text:
+
+I designed a layout for a personal web project I had developed (a web client that uses dropbox api to convert markdown files in a hosting directory to simple sites)
+
+*Client:* Personal project
+*Brief:* Design a layout for a markdown based website, general enough to accomodate various types of documents (mostly lists). The design should be based mostly on typography (as it is an exercise in type for the web) with minimal graphics and adaptable to various screen sizes.
+*Year:* 2014
+
+The code for the project can be found <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/dbx-md-host">here</a> and the website is <a class="link silver hover-gold hover-strike" href="https://dbx.jerome-arfouche.com/">here</a>
+
+----
+
+Uuid: EI015YdWHCbC8Kol

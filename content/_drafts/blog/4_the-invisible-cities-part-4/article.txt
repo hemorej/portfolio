@@ -1,0 +1,52 @@
+Title: the invisible cities - part 4
+
+----
+
+Published: 2019-12-09
+
+----
+
+Text:
+
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+I'd been meaning to write about process for a while, and now seems like the perfect time. The site underwent major upgrades in the past few weeks and I've learnt a lot in the process. 
+The last big change to come to the website was around January 2018 when I integrated a customized version of <a class="link silver hover-gold hover-strike" href="https://github.com/samnabi/shopkit/">shopkit</a>. 
+But with time, maintenance issues became more apparent and it was due for a big change.
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">_background</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+I had many issues with maintaining the website. Some recurring problems required customized solutions that felt a bit hacky and acted as a barrier for updates. I wrote my own solutions to address things like how the Kirby panel sorted pages, to control how thumbnails were generated, to provide an automatic unique ID for new pages. I even had to hack two Javascript frameworks (<a class="link silver hover-gold hover-strike" href="http://luis-almeida.github.io/unveil/">Unveil</a>) and (<a class="link silver hover-gold hover-strike" href="https://get.foundation/sites/docs/interchange.html">Interchange</a>) to be able to lazy load responsive images. Other issues were deployment related, for example the lack of automation for asset related tasks like minification and updating dependencies. 
+
+Needless to say, the web moves very fast. In the time since I customized solutions to these issues, a lot of them either became part of a standard (like srcset) or part of the CMS. I also discovered tools like <a class="link silver hover-gold hover-strike" href="https://vuejs.org/">Vue.js</a> and I was itching to get away from jQuery and its myriad dependencies on my small website.
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">_backend</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+The first step was upgrading Kirby. Kirby 3 had come out and it was a big, breaking change. The panel was hugely improved and solved so many issues I had like random ID resorting in content folders, easier thumbnail generation, automatic unique ID assignment and so on. I had quite a few plugins and template code so the migration was slow, but once I figured out the new panel blueprint system it went faster.
+The sitemap, the feed, the autoid system...everything was now part of the CMS or an easy to integrate plugin. Not to mention all the dependencies are now git submodules which makes upgrading them and deploying them so much easier. 
+
+The biggest migration was moving the monolithic store integration over to a plugin structure, as well as upgrading both Stripe and PayPal. Stripe had come out with a new Checkout system that allows customers to use digital wallets like Apple Pay and Google Pay and I was really excited about offering that on my website. 
+
+I also integrated a Blade plugin and migrated all the templates to the much more readable Blade syntax. After a few weeks of work all the previous functionality was upgraded and operational again. On the surface seemingly nothing had changed, but in the back the improvements were immense.
+
+Deleting old things felt really good and now it was time to get rid of even more.
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">_frontend</div>
+<div class="mt4 lh-copy f4 mid-gray ff-meta-serif">
+I decided it was time to bid farewell to my old friend Foundation. I wanted to get rid of jQuery (and they required it) but also to move to a lighter CSS framework. I had a really hard time designing a responsive website with Foundation (especially in the store section) and the typography and the grid were very brittle. Some of this is due to poorer frontend skills at the time, I have learnt a lot since then. But Foundation was also a poor choice for a website like mine because I was always going to have to discard 90% of it and fight with the rest to get it to work for me. 
+
+Almost by chance I happened on <a class="link silver hover-gold hover-strike" href="tachyons.io">Tachyons</a> and immediately took to it. It was so easy ! Even for someone like me for whom CSS will always feel a bit foreign the classes and grid system made sense, everything was much more intuitive. I wasn't fighting with the tool anymore. Designing responsive pages was a breeze.
+
+So I moved from using jQuery and Foundation, including my Frankenstein Interchange+Unveil solution to Tachyons, Vue.js and plain Javacsript. I came across <a class="link silver hover-gold hover-strike" href="https://github.com/verlok/lazyload">LazyLoad</a>, a Javascript lazy loader for responsive images using the new Intersection Observer API. This couldn't be more perfect: a zero-jQuery, standards-based solution to a problem I've been having for years.
+The more complex interactions of the store are now purely in Vue.js and the code is so much more readable and maintainable. I'd been using Vue.js at work all summer and using it felt similar to Tachyons. The architectural design of these tools made sense to me and it fit with how I work and what the task required. 
+
+The final issue was solved by integrating <a class="link silver hover-gold hover-strike" href="https://laravel-mix.com/">Laravel Mix</a>, another tool I'd been using at work. I had a sort-of functional pipeline with Grunt tasks but since then a lot of the dependencies were no longer working. I had resorted to manually doing all the asset preparation for production since the tool itself seemed to have fallen out of favour. Mix automated all these tasks again (minification, concatenation, compression, deployment) and all it took was 10 minutes.
+
+So here it is ! The latest upgrade process. You can see the entire code on <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/invis">Github</a> but make sure to check out the finished <a class="link silver hover-gold hover-strike" href="https://the-invisible-cities.com">website</a> too :)
+</div>
+
+----
+
+Uuid: JZbCs4o0e8fwe7Pb

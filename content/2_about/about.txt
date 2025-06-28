@@ -1,0 +1,31 @@
+Title: About
+
+----
+
+Text:
+
+<div class="mt4 lh-copy f3 mid-gray ff-meta-serif">
+I’m a developer from Montreal. I specialize in the web, from making <span class="small-caps">rest api</span>s to full web sites and apps. Though I do it less often, I love designing too, with a particular interest for book design.
+
+I'm a curious person by nature and I enjoy figuring out how things work as well as creating them.
+
+Away from the computer I'm an avid cyclist, musician, <a class="link silver hover-gold hover-strike" href="reading-list">reader</a> and <a class="link silver hover-gold hover-strike" href="http://the-invisible-cities.com">photographer</a>
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">colophon</div>
+<div class="lh-copy f4 mid-gray ff-meta-serif">
+This website is set in <a class="link silver hover-gold hover-strike" href="https://www.typewolf.com/ff-meta" target=_blank><span class="small-caps">ff</span> Meta</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby<span class="small-caps"> cms</span></a> and <a class="link silver hover-gold hover-strike" href="https://tachyons.io" target=_blank>Tachyons<span class="small-caps"> css</span></a>, during a sunny Montreal winter.
+</div>
+
+<div class="black-90 f3 meta-cd lh-copy mv2">links</div>
+<ul class="list lh-copy mid-gray f4">
+    <li><a class="link silver hover-gold hover-strike" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
+    <li><a class="link silver hover-gold hover-strike" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
+    <li><a class="link silver hover-gold hover-strike" href="reading-list">reading list</a> — because i'm a nerd, not exhaustive</li>
+    <li><a class="link silver hover-gold hover-strike" href="https://www.strava.com/athletes/1828846">cycling</a> — my other obsession</li>
+    <li><a class="link silver hover-gold hover-strike" href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
+</ul>
+
+----
+
+Uuid: P6QknbBtYLrQxdU1

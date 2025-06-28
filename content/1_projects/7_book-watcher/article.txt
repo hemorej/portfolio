@@ -1,0 +1,21 @@
+Title: book watcher
+
+----
+
+Text:
+
+A simple wishlist-type app to track announced but yet unpublished photography books
+
+Client: Personal project
+Brief: Design a simple website to track book release dates from different publishers and send notifications when publication status changes.
+Year: 2016
+
+The code for the project is on <a class="link silver hover-gold hover-strike" href="https://github.com/hemorej/book-watcher">github</a>, and here’s the <a class="link silver hover-gold hover-strike" href="http://steidl.jerome-arfouche.com">website</a>
+
+----
+
+New: new
+
+----
+
+Uuid: htxp7P9btFfp2uEU
