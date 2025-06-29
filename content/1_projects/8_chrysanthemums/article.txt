@@ -1,4 +1,4 @@
-Title: book watcher
+Title: chrysanthemums
 
 ----
 
@@ -8,4 +8,8 @@ I wanted to make a book of the photographs I had made on two separate trips to J
 
 ----
 
-Uuid: htxp7P9btFfp2uEU
+New: new
+
+----
+
+Uuid: atxp7P9btFfp2uEU
