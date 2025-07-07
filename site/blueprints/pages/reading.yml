@@ -1,17 +1,13 @@
 title: Reading
 
-columns:
-  - width: 1/2
-    sections:
-      drafts:
-        type: pages
-        headline: Drafts
-        status: draft
-
-  - width: 1/2
-    sections:
-      listed:
-        type: pages
-        headline: Published
-        status: listed
-        flip: true
+pages: false
+files: false
+fields:
+  titles:
+    label: titles
+    type: structure
+    fields:
+      text: 
+        label: text
+        type: text
+    required: true
