@@ -1,15 +1,13 @@
 <?php snippet('header') ?>
-
-<?php	
-    $articles = $page->children()->listed()->flip()->paginate(10);
+<?php
+    $items = $page->titles()->toStructure()->paginate(15);
 ?>
-
 <div class="cf mt6">
     <div class="fl w-60">
         <article class="f17rem-ns mid-gray tr-ns">
-    		<?php foreach($articles as $article): ?>
-    			<div class="meta-cd black-60 f2 mb2"><?= html($article->title()->lower()) ?></div>
-    		<?php endforeach ?>
+        <?php foreach($items as $item): ?>
+            <div class="meta-cd black-60 f2 mb2"><?= $item->text()->lower() ?></div>
+        <?php endforeach ?>
         </article>
     </div>
 
@@ -23,20 +21,20 @@
     </nav>
 </div>
 
-<?php if($articles->pagination()->hasPages()): ?>
+<?php if($items->pagination()->hasPages()): ?>
 	<nav class="cf">		
 		<div class="fl w-100 w-60-ns">
 			<div class="tr">
-    			<?php if($articles->pagination()->hasPrevPage()): ?>
-    				<a class="link silver hover-gold" href="<?= $articles->pagination()->prevPageURL() ?>">&laquo; newer </a>
+    			<?php if($items->pagination()->hasPrevPage()): ?>
+    				<a class="link silver hover-gold" href="<?= $items->pagination()->prevPageURL() ?>">&laquo; newer </a>
     			<?php endif ?>
 
-    			<?php if($articles->pagination()->hasNextPage() && $articles->pagination()->hasPrevPage()): ?>
+    			<?php if($items->pagination()->hasNextPage() && $items->pagination()->hasPrevPage()): ?>
     				| 
     			<?php endif ?>
     			
-    			<?php if($articles->pagination()->hasNextPage()): ?>
-    				<a class="link silver hover-gold" href="<?= $articles->pagination()->nextPageURL() ?>">older  &raquo;</a>
+    			<?php if($items->pagination()->hasNextPage()): ?>
+    				<a class="link silver hover-gold" href="<?= $items->pagination()->nextPageURL() ?>">older  &raquo;</a>
     			<?php endif ?>	
 			</div>
 		</div>

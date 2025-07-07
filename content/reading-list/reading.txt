@@ -2,7 +2,93 @@ Title: Reading list
 
 ----
 
-Text: 
+Titles:
+
+- 
+  text: les amours difficiles, italo calvino
+- 
+  text: ring, andré alexis
+- 
+  text: le vieux jardin, hwang sok-yong
+- 
+  text: le pays des autres, leïla slimani
+- 
+  text: tokyo ueno station, miri yu
+- 
+  text: ici, les femmes ne rêvent pas, rana ahmad
+- 
+  text: mille secrets mille dangers, alain farah
+- 
+  text: the origins of the lebanese national idea, carol hakim
+- 
+  text: le chevalier inexistant, italo calvino
+- 
+  text: earthlings, sayaka murata
+- 
+  text: samarcande, amin maalouf
+- 
+  text: léon l'africain, amin maalouf
+- 
+  text: nos frères inattendus, amin maalouf
+- 
+  text: anthologie poétique, mahmoud darwich
+- 
+  text: le premier homme, albert camus
+- 
+  text: les justes, albert camus
+- 
+  text: le naufrage des civilisations, amin maalouf
+- 
+  text: liban, guerres de l'europe et de l'orient, georges corm
+- 
+  text: a house of many mansions, kamal salibi
+- 
+  text: the lord of the rings, jrr tolkien
+- 
+  text: la belle du caire, naguib mahfouz
+- 
+  text: taxi, khaled el-khamissi
+- 
+  text: si une nuit d'hiver un voyageur, italo calvino
+- 
+  text: les échelles du levant, amin maalouf
+- 
+  text: s'enfuir, guy delisle
+- 
+  text: lituma dans les andes, mario vargas llosa
+- 
+  text: house of stone, anthony shadid
+- 
+  text: fifteen dogs, andré alexis
+- 
+  text: la tante julia et le scribouillard, mario vargas llosa
+- 
+  text: les cerfs-volants de kaboul, khaled hosseini
+- 
+  text: the prophet, khalil gibran
+- 
+  text: invisible city, ken schles
+- 
+  text: invisible cities, italo calvino
+- 
+  text: call of the wild, jack london
+- 
+  text: a scanner darkly, philip k dick
+- 
+  text: the caves of steel, isaac asimov
+- 
+  text: radio free albemuth, philip k dick
+- 
+  text: ubik, philip k dick
+- 
+  text: the hobbit, jrr tolkien
+- 
+  text: récits de notre quartier, naguib mahfouz
+- 
+  text: quiet, susan cain
+- 
+  text: origines, amin maalouf
+-
 
 ----
 

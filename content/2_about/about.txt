@@ -12,12 +12,11 @@ I'm a curious person by nature and I enjoy figuring out how things work as well 
 Away from the computer I'm an avid cyclist, musician, <a class="link silver hover-gold hover-strike" href="reading-list">reader</a> and <a class="link silver hover-gold hover-strike" href="http://the-invisible-cities.com">photographer</a>
 </div>
 
-<div class="black-90 f3 meta-cd lh-copy mv2">colophon</div>
 <div class="lh-copy f4 mid-gray ff-meta-serif">
 This website is set in <a class="link silver hover-gold hover-strike" href="https://www.typewolf.com/ff-meta" target=_blank><span class="small-caps">ff</span> Meta</a>. It was made with <a class="link silver hover-gold hover-strike" href="http://getkirby.com/" target=_blank>Kirby<span class="small-caps"> cms</span></a> and <a class="link silver hover-gold hover-strike" href="https://tachyons.io" target=_blank>Tachyons<span class="small-caps"> css</span></a>, during a sunny Montreal winter.
 </div>
 
-<div class="black-90 f3 meta-cd lh-copy mv2">links</div>
+<div class="f3 meta-cd link silver hover-gold mt4">links</div>
 <ul class="list lh-copy mid-gray f4">
     <li><a class="link silver hover-gold hover-strike" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
     <li><a class="link silver hover-gold hover-strike" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
