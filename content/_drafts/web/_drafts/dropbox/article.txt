@@ -1,9 +1,0 @@
-Title: Dropbox markdown hosting
-
-----
-
-Link: http://jerome-arfouche.com/dropbox
-
-----
-
-Uuid: sV0YpyNIjfyYZB0J
