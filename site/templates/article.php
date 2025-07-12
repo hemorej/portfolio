@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
 
 <?php 
+
 	if( $page->title() != $page->uid()){
 		$headline = "_".$page->title()->lower();
 	} else if("" !== $page->published()->toString()){
