@@ -1,0 +1,56 @@
+@font-face {
+  font-family: ff-meta-serif;
+  src: url('../font/MetaSerifWeb-Book.eot'),
+       url('../font/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
+       url('../font/MetaSerifWeb-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: meta-cd;
+    src: url(../font/MetaWeb-CondNormal.eot),
+         url(../font/MetaWeb-CondNormal.eot?#iefix) format('embedded-opentype'),
+         url(../font/MetaWeb-CondNormal.woff) format('woff'),
+         url(../font/MetaWeb-CondNormal.svg#webfont) format('svg');
+    font-weight: 400;
+    font-style:normal
+}
+
+.ff-meta-serif{
+    font-family: 'ff-meta-serif', serif
+}
+
+.meta-cd{
+    font-family: 'meta-cd', sans-serif
+}
+
+::selection {
+    background: #ffb700;
+    color:#fff
+}
+
+::-moz-selection {
+    background: #ffb700;
+    color:#fff
+}
+
+.error {background: url("../images/static.png") repeat center center fixed}
+.hover-strike:hover{text-decoration: line-through}
+
+.f17rem{ font-size: 1.77rem }
+@media screen and (min-width: 30em){
+    .f17rem-ns{
+        font-size: 1.77rem
+    }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .f17rem-m{
+        font-size: 1.77rem
+    }
+}
+@media screen and (min-width: 60em) {
+    .f17rem-l{
+        font-size: 1.77rem
+    }
+}
