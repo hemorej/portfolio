@@ -5,4 +5,12 @@ git clone --depth 1 --branch=$FORGE_SITE_BRANCH --recurse-submodules=false $REPO
 cd portfolio
 rsync -a --remove-source-files static/* $FORGE_SITE_PATH
 
-sed -i "s|\.\./font|$CDN_URL|g" $FORGE_SITE_PATH/assets/css/tidy.css
+if [ ! -e $FORGE_SITE_PATH/assets/images ]; then
+    cd $FORGE_SITE_PATH/assets && ln -s /mnt/$VOLUME_NAME/assets/images .
+fi
+if [ ! -e $FORGE_SITE_PATH/assets/font ]; then
+    cd $FORGE_SITE_PATH/assets && ln -s /mnt/$VOLUME_NAME/assets/font .
+fi
+if [ ! -e $FORGE_SITE_PATH/media ]; then
+    cd $FORGE_SITE_PATH && ln -s /mnt/$VOLUME_NAME/media .
+fi
