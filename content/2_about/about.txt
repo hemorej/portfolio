@@ -20,7 +20,7 @@ This website is set in <a class="link silver hover-gold hover-strike" href="http
 <ul class="list lh-copy mid-gray f4">
     <li><a class="link silver hover-gold hover-strike" href="https://github.com/hemorej?tab=repositories" target=_blank>github</a> — the digital tinkerer’s desk drawer</li>
     <li><a class="link silver hover-gold hover-strike" href="https://the-invisible-cities.com/prints" target=_blank>shop</a> — my photography print shop</li>
-    <li><a class="link silver hover-gold hover-strike" href="reading-list">reading list</a> — because i'm a nerd, not exhaustive</li>
+    <li><a class="link silver hover-gold hover-strike" href="/reading-list">reading list</a> — because i'm a nerd, not exhaustive</li>
     <li><a class="link silver hover-gold hover-strike" href="https://www.strava.com/athletes/1828846">cycling</a> — my other obsession</li>
     <li><a class="link silver hover-gold hover-strike" href="mailto:info@jerome-arfouche.com" target=_blank>mail</a> — don't be shy</li>
 </ul>
