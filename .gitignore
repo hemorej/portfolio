@@ -1,5 +1,4 @@
 node_modules/
-*.pdf
 *.jpg
 *.jpeg
 *.png
@@ -24,3 +23,5 @@ Icon
 !/site/sessions/index.html
 /site/config/.license
 .idea/*
+*.pdf
+!static/resume.pdf
