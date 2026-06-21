@@ -1,8 +1,0 @@
-title: User
-type: fields
-headline: User
-fields:
-  secret:
-    label: Secret
-    type:  text
-    disabled: true
