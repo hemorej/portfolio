@@ -25,3 +25,5 @@ Icon
 .idea/*
 *.pdf
 !static/resume.pdf
+!static/fonts/*.woff
+!static/fonts/*.eot
