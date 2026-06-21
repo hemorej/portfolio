@@ -5,10 +5,3 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-
-  # Enable version updates for php
-  - package-ecosystem: "composer"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
