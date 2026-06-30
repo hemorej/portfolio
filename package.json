@@ -1,5 +1,8 @@
 {
   "scripts": {
     "build": "node scripts/prepare-deploy.js"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0"
   }
 }
