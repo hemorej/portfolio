@@ -1,0 +1,36 @@
+name: Dependency integrity
+
+# Runs on any PR touching the lockfile or package.json:
+#  - install --frozen-lockfile fails the build if pnpm-lock.yaml doesn't
+#    exactly match package.json, so a lockfile can't drift or be hand-edited
+#    to sneak in an unreviewed dependency/version.
+#  - pnpm audit flags known-vulnerable versions already present in the
+#    lockfile (catches old CVEs, not just freshly-published malicious
+#    releases, which is what dependency-publisher-check.yml covers).
+on:
+  pull_request:
+    paths:
+      - "pnpm-lock.yaml"
+      - "package.json"
+
+jobs:
+  verify-lockfile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: 11.9.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24.x"
+
+      - name: Install with frozen lockfile
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit dependencies
+        run: pnpm audit
