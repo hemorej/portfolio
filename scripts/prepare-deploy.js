@@ -5,8 +5,22 @@ const { minify } = require("html-minifier-terser");
 const SRC = path.join(__dirname, "..");
 const DIST = path.join(__dirname, "../static");
 
+/**
+ * Reads VOLUME_NAME out of a .env file in the repo root.
+ * @returns {string}
+ */
+function readVolumeName() {
+  const envPath = path.join(SRC, ".env");
+  const env = fs.readFileSync(envPath, "utf8");
+  const match = env.match(/^VOLUME_NAME=(.*)$/m);
+  if (!match) {
+    throw new Error(`VOLUME_NAME not set in ${envPath}`);
+  }
+  return match[1].trim();
+}
+
 /** Persistent volume mount on the production server where large assets live. */
-const VOLUME = "/mnt/volume_tor1_01";
+const VOLUME = path.join("/mnt", readVolumeName());
 
 /**
  * Builds the static output directory for deployment.

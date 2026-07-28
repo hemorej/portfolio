@@ -23,6 +23,7 @@ Icon
 !/site/sessions/index.html
 /site/config/.license
 .idea/*
+.env
 *.pdf
 !static/resume.pdf
 !static/fonts/*.woff
