@@ -21,3 +21,10 @@ The build step is handled by `scripts/prepare-deploy.js` using `html-minifier-te
 ## Deployment
 
 Deployment is managed by [Laravel Forge](https://forge.laravel.com). The deploy script (`scripts/forge_deploy.sh`) clones the repo and rsyncs the pre-built `static/` directory to the site root. The `static/` build must be committed before pushing to the production branch.
+
+## Supply-chain safety
+
+Two GitHub Actions run on any PR touching `package.json` or `pnpm-lock.yaml`:
+
+- **`dependency-integrity.yml`** — `pnpm install --frozen-lockfile` (fails if the lockfile drifts from `package.json`) plus `pnpm audit` for known CVEs.
+- **`dependency-publisher-check.yml`** — runs `scripts/check-new-publishers.mjs`, which flags any newly-introduced dependency version published to npm by an account with no recent prior releases of that package (the hijacked-maintainer pattern). Heuristic, not proof — a flag means "verify against the project's official releases".
