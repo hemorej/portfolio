@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "faq": [
+    {
+      "question": "Who is Jerome Arfouche?",
+      "answer": "Jerome Arfouche is a web developer from Montreal who designs and builds websites and apps, primarily using Laravel, Vue.js/Nuxt, and Kirby CMS."
+    },
+    {
+      "question": "What technologies does Jerome work with?",
+      "answer": "Laravel, Vue.js/Nuxt, and Kirby CMS, along with REST APIs and general full-stack web development."
+    },
+    {
+      "question": "What projects has Jerome built?",
+      "answer": "Projects include a minimalist weather app, a cycling workout tracker (Sprocket), a book release tracker (Imprint), a darkroom film development timer, and a photography site and print shop (The Invisible Cities)."
+    },
+    {
+      "question": "How can I contact Jerome?",
+      "answer": "Email hello@jerome-arfouche.com or find him on GitHub at github.com/hemorej."
+    }
+  ],
+  "lastModified": "2026-09-12T00:00:00Z"
+}

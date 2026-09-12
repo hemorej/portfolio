@@ -1,0 +1,13 @@
+{
+  "name": "Jerome Arfouche — Web Development",
+  "provider": "Jerome Arfouche",
+  "serviceType": "Web development",
+  "description": "Design and development of websites, web apps, and REST APIs, primarily with Laravel, Vue.js/Nuxt, and Kirby CMS.",
+  "url": "https://jerome-arfouche.com",
+  "contact": "hello@jerome-arfouche.com",
+  "sameAs": [
+    "https://github.com/hemorej"
+  ],
+  "version": "1.0",
+  "lastModified": "2026-09-12T00:00:00Z"
+}

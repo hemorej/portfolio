@@ -1,0 +1,17 @@
+{
+  "name": "Jerome Arfouche",
+  "url": "https://jerome-arfouche.com",
+  "type": "Person",
+  "jobTitle": "Web Developer",
+  "location": "Montreal, Canada",
+  "summary": "Jerome Arfouche is a web developer based in Montreal who designs and builds websites and apps, primarily with Laravel, Vue.js/Nuxt, and Kirby CMS. Work spans REST APIs to full sites and apps. Outside of development he is a cyclist, musician, reader, and photographer.",
+  "targetAudience": "People looking to hire or collaborate with a web developer, or view his projects and photography work.",
+  "primaryCapabilities": [
+    "Website and web app development (Laravel, Vue.js/Nuxt, Kirby CMS)",
+    "REST API design and development",
+    "Frontend design and UI implementation"
+  ],
+  "contact": "hello@jerome-arfouche.com",
+  "version": "1.0",
+  "lastModified": "2026-09-12T00:00:00Z"
+}

@@ -1,0 +1,16 @@
+# ai.txt for jerome-arfouche.com
+# Structured information for AI agents and LLM-based crawlers
+
+Site: Jerome Arfouche — Web Developer Portfolio
+URL: https://jerome-arfouche.com
+Owner: Jerome Arfouche
+Contact: hello@jerome-arfouche.com
+
+Summary: https://jerome-arfouche.com/ai/summary.json
+FAQ: https://jerome-arfouche.com/ai/faq.json
+Service: https://jerome-arfouche.com/ai/service.json
+Sitemap: https://jerome-arfouche.com/sitemap-llm.xml
+
+Crawling: AI crawlers and LLM-based agents are welcome to index this
+site's content for search, summarization, and question answering.
+See /robots.txt for crawler directives.

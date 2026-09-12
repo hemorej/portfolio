@@ -51,7 +51,24 @@ async function main() {
   fs.symlinkSync(path.join(VOLUME, "ico"), path.join(DIST, "ico"));
   fs.symlinkSync(path.join(VOLUME, "fonts"), path.join(DIST, "fonts"));
 
+  // Copy small static files (crawler directives, GEO/AI metadata) as-is.
+  copyFile("robots.txt");
+  copyFile("sitemap-llm.xml");
+  copyDir("ai");
+  copyDir(".well-known");
+
   console.log("static/ ready");
+}
+
+/** Copies a single file from the repo root into DIST, preserving its relative path. */
+function copyFile(relPath) {
+  fs.mkdirSync(path.join(DIST, path.dirname(relPath)), { recursive: true });
+  fs.copyFileSync(path.join(SRC, relPath), path.join(DIST, relPath));
+}
+
+/** Recursively copies a directory from the repo root into DIST. */
+function copyDir(relPath) {
+  fs.cpSync(path.join(SRC, relPath), path.join(DIST, relPath), { recursive: true });
 }
 
 main();
