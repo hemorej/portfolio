@@ -4,5 +4,5 @@
 
 check /etc/nginx/sites-available/jerome-arfouche.ca  nginx.conf
 pull  /etc/nginx/forge-conf/jerome-arfouche.ca/before/redirect.conf             forge-conf/before/redirect.conf
-pull  /etc/nginx/forge-conf/jerome-arfouche.ca/before/ssl_redirect.conf         forge-conf/before/ssl_redirect.conf
+check /etc/nginx/forge-conf/jerome-arfouche.ca/before/ssl_redirect.conf         forge-conf/before/ssl_redirect.conf
 pull  /etc/nginx/forge-conf/jerome-arfouche.ca/server/letsencrypt_challenge.conf forge-conf/server/letsencrypt_challenge.conf
